@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+/* font-family: 'Concert One', cursive; */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    
+}
+.header{
+    width: 90vw;
+    /* background-color:red; */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:10px;
+    margin-left: 5%;
+    margin-right: 7%;
+   
+}
+.logo{
+    /* background-color: yellow; */
+    position: relative;
+}
+.logo img{
+    width: 10vh;
+    padding-top: 20px;
+}
+
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin:10px 20px;
+    font-size: 25px;
+    padding: 10px ;
+    font-family: 'Concert One', cursive;
+    
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    position: relative
+}
+.navbar ul li:hover{
+    font-size: 27px;
+}
+.navbar a::before{
+    position:absolute;
+    content: '';
+    width: 0;
+    transition: 0.3s;
+    top:30px;
+    left:0;
+    background: linear-gradient(120deg,#ffd28f,#ed7878);
+    height: 3px;
+}
+.navbar a:hover::before{
+    width: 100%;
+}
+.Home{
+    display: flex;
+    justify-content: space-evenly;
+}
+.text1{
+   display: flex;
+   height: fit-content;
+   flex-direction: column;
+    margin-top: 200px;
+    color: white;
+    margin-left: 40px;
+}
+.image{
+    margin: 0px 10px;
+}
+.image img{
+    
+    border-radius: 40vh;
+    /* border:#ff004f solid  5px; */
+    height: 75vh;
+    margin-top: 10px ;
+    margin-left: 100px;
+}
+.image img{
+    background-image: 
+      radial-gradient(
+        farthest-corner circle at 50% 50% in oklab, 
+        oklch(0% 0 350) 33% 0%, oklch(63% 0 95) 100%
+      )
+    ;
+  }
+.intro{
+    font-size: 34px;
+    text-align: left;
+    font-family: 'Satisfy', cursive;
+}
+.name{
+    font-size:75px ;
+    font-family: 'Abril Fatface', cursive;
+}
+.name {
+    background: linear-gradient(120deg,#8fb3ff,#ed78ab);
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition :1s;
+}
+.name:hover{
+    background: linear-gradient(60deg,#ed78ab,#8fb3ff);
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.work{
+    font-size: 30px;
+    font-family: 'Satisfy', cursive;
+    font-weight:bold;
+    margin-top: 20px;
+}
+.cont{
+    font-size: 20px;
+    margin-top: 20px;
+    height: 40px;
+    width: 150px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(90deg,#d00c0c,#271279); 
+    box-shadow: 6px 6px 5px #3c00ff,-10px -5px 5px rgb(255, 55, 0) ;
+    color: white;
+    border:none;
+    border-radius: 20px;
+    transition: 1s;
+}
+.cont:hover{
+    background: linear-gradient(90deg,#271279,#d00c0c); 
+    box-shadow: 10px 6px 5px rgb(255, 55, 0),-10px -5px 5px #3c00ff ;
+    cursor: pointer;
+}
+.image img{
+    box-shadow: 6px 6px 10px #3c00ff,-10px -5px 10px rgb(255, 55, 0) ;
+    transition: 1s;
+}
+.image img:hover{
+    box-shadow: 10px 6px 10px rgb(255, 55, 0),-10px -5px 10px #3c00ff ;
+    height: 78vh;
+}
