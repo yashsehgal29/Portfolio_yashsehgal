@@ -61,7 +61,8 @@ body{
     background: linear-gradient(120deg,#ffd28f,#ed7878);
     height: 3px;
 }
-.navbar a:hover::before{
+.navbar a:hover::before,
+.navbar a.active::before{
     width: 100%;
 }
 .Home{
