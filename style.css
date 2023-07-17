@@ -41,7 +41,7 @@ body{
     font-size: 25px;
     padding: 10px ;
     font-family: 'Concert One', cursive;
-    
+    transition: 0.3s;
 }
 .navbar a{
     text-decoration: none;
