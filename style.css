@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 /* font-family: 'Concert One', cursive; */
 *{
     margin: 0;
@@ -14,24 +15,23 @@ body{
     
 }
 .header{
-    width: 90vw;
-    /* background-color:red; */
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top:0;
+    left:0;
+    background-color: black;
     display: flex;
     justify-content:space-between;
     align-items: center;
-    flex-wrap: wrap;
-    margin:10px;
-    margin-left: 5%;
-    margin-right: 7%;
+    
    
 }
-.logo{
-    /* background-color: yellow; */
-    position: relative;
-}
+
 .logo img{
     width: 10vh;
-    padding-top: 20px;
+    margin-top:5px;
+    margin-left: 100px;
 }
 
 .navbar ul li{
@@ -40,13 +40,16 @@ body{
     margin:10px 20px;
     font-size: 25px;
     padding: 10px ;
-    font-family: 'Concert One', cursive;
+  
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     transition: 0.3s;
+    margin-right: 50px;
 }
 .navbar a{
     text-decoration: none;
     color: white;
-    position: relative
+    position: relative;
 }
 .navbar ul li:hover{
     font-size: 27px;
@@ -56,7 +59,7 @@ body{
     content: '';
     width: 0;
     transition: 0.3s;
-    top:30px;
+    top:35px;
     left:0;
     background: linear-gradient(120deg,#ffd28f,#ed7878);
     height: 3px;
@@ -66,8 +69,11 @@ body{
     width: 100%;
 }
 .Home{
+    margin-top: 150px;
     display: flex;
     justify-content: space-evenly;
+    width: 100vw;
+    height: 100vh;
 }
 .text1{
    display: flex;
@@ -81,9 +87,7 @@ body{
     margin: 0px 10px;
 }
 .image img{
-    
     border-radius: 40vh;
-    /* border:#ff004f solid  5px; */
     height: 75vh;
     margin-top: 10px ;
     margin-left: 100px;
@@ -144,9 +148,46 @@ body{
 }
 .image img{
     box-shadow: 6px 6px 10px #3c00ff,-10px -5px 10px rgb(255, 55, 0) ;
-    transition: 1s;
+    transition: 0.3s;
 }
 .image img:hover{
     box-shadow: 10px 6px 10px rgb(255, 55, 0),-10px -5px 10px #3c00ff ;
     height: 78vh;
+}
+.about{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(19, 17, 17);
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+.myimg img{
+    height:70vh;
+    margin-left: 100px;
+    margin-top: 220px;
+    border-radius: 25px;
+    box-shadow: 6px 6px 10px #696865,-10px -5px 10px rgb(49, 49, 51) ;
+}
+.text2 .des,.abouthead{
+    color: white;
+}
+.text2{
+    margin-top: 220px;
+     margin-left: 70px;
+     display: flex;
+     flex-direction: column;
+     font-size: 30px;
+     font-family: 'Poppins', sans-serif;
+}
+.text2 .abouthead{
+    font-size: 50px;
+    margin-left: 10%;
+    font-weight: 700;
+    color: #ff004f;
+    text-shadow: 4px 4px 20px #9e697a;
+    text-decoration: underline;
+}
+.skill{
+    list-style: #ff004f;
 }
