@@ -1,4 +1,3 @@
-const fruits=["orange","banana","graped"];
-for(let i of fruits){
-    console.log(i);
-}
+console.log("hello world");
+fruit=prompt("What is your favorite food");
+console.log(fruit); 
